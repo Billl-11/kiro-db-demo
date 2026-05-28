@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "postgres": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "postgresql://demo:demo123@localhost:5432/bank_demo"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
