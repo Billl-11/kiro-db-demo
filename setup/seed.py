@@ -15,7 +15,7 @@ DB_PARAMS = {
 }
 
 def main():
-    sql = Path(__file__).parent.parent.joinpath("seed.sql").read_text()
+    sql = Path(__file__).parent.joinpath("seed.sql").read_text()
     conn = psycopg2.connect(**DB_PARAMS)
     cur = conn.cursor()
     cur.execute(sql)
